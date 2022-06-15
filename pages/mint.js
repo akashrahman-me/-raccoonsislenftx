@@ -8,7 +8,7 @@ export default function Mint() {
       <div className="pt-[89px]">
         <div className="flex h-[calc(100vh-90px)] items-center justify-center">
           <div className="max-w-[500px]">
-            <img src="/images/loading2.gif" class="w-full" />
+            <img src="/images/loading2.gif" className="w-full" />
           </div>
         </div>
       </div>
