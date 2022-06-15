@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+.body-copy {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+}
+
+.section {
+  padding: 80px 15px;
+}
+.body-title {
+  font-size: 80px;
+  font-weight: 600;
+  @apply mb-10;
+}
+.bg-all {
+  background-color: rgba(36, 36, 36, 1) !important;
+}
+.animate-slide {
+  -webkit-animation: slide 4s infinite;
+  animation: slide 4s infinite;
+}
+.animation-delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: -38px;
+  }
+  75% {
+    top: -38px;
+  }
+}
+
+.element-auto-scroll {
+  animation: autoscroll 50s linear infinite;
+}
+
+@keyframes autoscroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .roadmap-container {
+    max-width: 456px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .roadmap-container {
+    max-width: 840px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body-copy {
+    font-size: 16px;
+  }
+  .section {
+    padding: 130px 15px;
+  }
+  .body-title {
+    font-size: 120px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .roadmap-container {
+    max-width: 100%;
+  }
+}
