@@ -1,9 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 function Navbar({ defaultColor }) {
-  const router = useRouter();
   const navbar = useRef(null);
   const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen((v) => !v);

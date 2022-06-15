@@ -10,8 +10,8 @@ function Header() {
 
   useEffect(() => {
     headerArea.current.addEventListener("mousemove", (event) => {
-      const x = (headerArea.current.clientWidth / 2 - event.pageX) / 30;
-      const y = (headerArea.current.clientHeight / 2 - event.pageY) / 20;
+      const x = (headerArea?.current?.clientWidth / 2 - event.pageX) / 30;
+      const y = (headerArea?.current?.clientHeight / 2 - event.pageY) / 20;
 
       [...headerArea.current.querySelectorAll(".parallax")].map((child) => {
         child.style.transform = `translate(${x}px, ${y}px)`;
