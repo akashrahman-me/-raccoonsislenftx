@@ -12,8 +12,8 @@ function TextPalette({ title, subtitle, describe, socials }) {
       </div>
       <div className="flex pt-[10px] lg:pt-[40px]">
         {socials?.map(({ url, icon }, i) => (
-          <a key={i} href={url} target="_blank" rel="noreferrer" class="pr-[20px]">
-            <img src={icon} alt="Twitter" class="w-[30px] lg:w-[39px]" />
+          <a key={i} href={url} target="_blank" rel="noreferrer" className="pr-[20px]">
+            <img src={icon} alt="Twitter" className="w-[30px] lg:w-[39px]" />
           </a>
         ))}
       </div>
